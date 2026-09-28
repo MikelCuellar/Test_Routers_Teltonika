@@ -1,0 +1,9 @@
+# Dependencias de laboratorio para Test_Routers_Teltonika
+requests>=2.31.0
+urllib3>=2.0.0
+paho-mqtt>=1.6.1
+pymodbus>=3.5.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+pytest>=7.0.0
+pytest-mock>=3.10.0
