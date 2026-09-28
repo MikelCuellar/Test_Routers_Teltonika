@@ -1,0 +1,167 @@
+{
+  "ticket_id": "RMA-2026-001",
+  "engineer_name": "Ing. Mikel Cuellar",
+  "client_name": "Transportes Mineros del Norte",
+  "timestamp": "2026-09-27 22:41:27",
+  "verdict": "APROBADO (SIN DEFECTO DE HARDWARE)",
+  "defective_components": [],
+  "observations": [],
+  "stats": {
+    "total_checks": 11,
+    "pass": 11,
+    "fail": 0,
+    "warning": 0,
+    "not_equipped": 0
+  },
+  "device": {
+    "model_name": "RUT955",
+    "product_code": "RUT955003100",
+    "serial_number": "1102938475",
+    "mac_address": "00:1E:42:1A:2B:3C",
+    "hardware_revision": "0004",
+    "batch_number": "0012",
+    "firmware_version": "RUT9_R_00.07.06.3",
+    "kernel_version": "5.4.229",
+    "modem_model": "EC25-AF (Quectel)",
+    "modem_imei": "864123049182345",
+    "modem_firmware": "EC25AFAR06A03M4G"
+  },
+  "modules": [
+    {
+      "module_id": "mod_id",
+      "module_name": "Identificación y Metadatos de Fábrica",
+      "status": "PASS",
+      "summary": "",
+      "items": [
+        {
+          "name": "Número de Serie (Serial Number)",
+          "status": "PASS",
+          "message": "Serial verificado en EEPROM",
+          "observed": "1102938475",
+          "expected": null,
+          "details": {}
+        },
+        {
+          "name": "Dirección MAC de Fábrica",
+          "status": "PASS",
+          "message": "Dirección física IEEE 802",
+          "observed": "00:1E:42:1A:2B:3C",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    },
+    {
+      "module_id": "mod_sys",
+      "module_name": "Sistema Base & Memoria",
+      "status": "PASS",
+      "summary": "",
+      "items": [
+        {
+          "name": "Integridad Memoria Flash (NAND/NOR)",
+          "status": "PASS",
+          "message": "Ciclo RW exitoso en /overlay",
+          "observed": "Partición RW activa",
+          "expected": null,
+          "details": {}
+        },
+        {
+          "name": "Memoria RAM DDR",
+          "status": "PASS",
+          "message": "Memoria libre suficiente",
+          "observed": "Total: 128MB | Disp: 82MB",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    },
+    {
+      "module_id": "mod_cell",
+      "module_name": "Módem Celular & Ranuras SIM",
+      "status": "PASS",
+      "summary": "",
+      "items": [
+        {
+          "name": "Chipset Celular & IMEI",
+          "status": "PASS",
+          "message": "Módem Quectel EC25 respondiendo",
+          "observed": "IMEI: 864123049182345",
+          "expected": null,
+          "details": {}
+        },
+        {
+          "name": "Ranura SIM 1",
+          "status": "PASS",
+          "message": "SIM reconocida",
+          "observed": "ICCID: 8956021948291048291",
+          "expected": null,
+          "details": {}
+        },
+        {
+          "name": "Multiplexor Dual-SIM",
+          "status": "PASS",
+          "message": "Conmutación SIM1 <-> SIM2 correcta",
+          "observed": "Relé electrónico OK",
+          "expected": null,
+          "details": {}
+        },
+        {
+          "name": "Sensibilidad RF",
+          "status": "PASS",
+          "message": "Señal óptima",
+          "observed": "RSSI: -65 dBm | RSRP: -92 dBm",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    },
+    {
+      "module_id": "mod_eth",
+      "module_name": "Switch Ethernet & Puertos Físicos",
+      "status": "PASS",
+      "summary": "",
+      "items": [
+        {
+          "name": "Detección Enlace Físico",
+          "status": "PASS",
+          "message": "Link eléctrico 100M Full Duplex",
+          "observed": "Carrier: 1 (Link UP)",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    },
+    {
+      "module_id": "mod_wifi",
+      "module_name": "Radio Wi-Fi & Etapa RF (WLAN)",
+      "status": "PASS",
+      "summary": "",
+      "items": [
+        {
+          "name": "Recepción RF & Escaneo",
+          "status": "PASS",
+          "message": "Detectó 6 redes circundantes",
+          "observed": "RF LNA Operativo",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    },
+    {
+      "module_id": "mod_gps",
+      "module_name": "Receptor Satelital GNSS / GPS",
+      "status": "PASS",
+      "summary": "",
+      "items": [
+        {
+          "name": "Fijación GNSS",
+          "status": "PASS",
+          "message": "Fijación 3D obtenida (11 satélites)",
+          "observed": "Lat: -33.4372, Lon: -70.6506",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    }
+  ]
+}

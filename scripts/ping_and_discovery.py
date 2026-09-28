@@ -7,6 +7,9 @@ import ssl
 import sys
 import urllib.request
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 # OUIs de direcciones MAC registradas a Teltonika Networks
 TELTONIKA_MAC_OUIS = {
     "00:1e:42",

@@ -1,0 +1,75 @@
+{
+  "ticket_id": "RMA-2026-002",
+  "engineer_name": "Ing. Mikel Cuellar",
+  "client_name": "Agrícola San Pedro",
+  "timestamp": "2026-09-27 22:41:27",
+  "verdict": "DEFECTUOSO (FALLA DE HARDWARE CONFIRMADA)",
+  "defective_components": [
+    "Módem Celular & Ranuras SIM: Chipset Celular & IMEI — Módem celular no responde en bus serie ni a comandos AT (Chipset LTE quemado por sobretensión)",
+    "Módem Celular & Ranuras SIM: Ranura SIM 2 — Pines de contacto rotos mecánicamente en ranura SIM 2",
+    "Sistema Base & Memoria: Integridad Memoria Flash — Memoria Flash bloqueada en modo Read-Only / Bad Blocks en partición raíz"
+  ],
+  "observations": [],
+  "stats": {
+    "total_checks": 3,
+    "pass": 0,
+    "fail": 3,
+    "warning": 0,
+    "not_equipped": 0
+  },
+  "device": {
+    "model_name": "RUT950",
+    "product_code": "RUT95000XXXX",
+    "serial_number": "9928172635",
+    "mac_address": "00:1E:42:FF:EE:DD",
+    "hardware_revision": "0002",
+    "batch_number": "0008",
+    "firmware_version": "RUT9_R_00.07.04.1",
+    "kernel_version": "5.4.229",
+    "modem_model": "EC25-E",
+    "modem_imei": "SIN_RESPUESTA",
+    "modem_firmware": "N/A"
+  },
+  "modules": [
+    {
+      "module_id": "mod_cell",
+      "module_name": "Módem Celular & Ranuras SIM",
+      "status": "FAIL",
+      "summary": "",
+      "items": [
+        {
+          "name": "Chipset Celular & IMEI",
+          "status": "FAIL",
+          "message": "Módem celular no responde en bus serie ni a comandos AT (Chipset LTE quemado por sobretensión)",
+          "observed": "Módem Desconectado",
+          "expected": null,
+          "details": {}
+        },
+        {
+          "name": "Ranura SIM 2",
+          "status": "FAIL",
+          "message": "Pines de contacto rotos mecánicamente en ranura SIM 2",
+          "observed": "Circuito Abierto",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    },
+    {
+      "module_id": "mod_sys",
+      "module_name": "Sistema Base & Memoria",
+      "status": "FAIL",
+      "summary": "",
+      "items": [
+        {
+          "name": "Integridad Memoria Flash",
+          "status": "FAIL",
+          "message": "Memoria Flash bloqueada en modo Read-Only / Bad Blocks en partición raíz",
+          "observed": "Read-only file system",
+          "expected": null,
+          "details": {}
+        }
+      ]
+    }
+  ]
+}
